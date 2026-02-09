@@ -1,0 +1,36 @@
+# Datos (NO subir a GitHub)
+data/raw/
+data/processed/*.csv
+*.zip
+
+# Modelos entrenados
+models/*.pkl
+models/*.joblib
+
+# Entorno Python
+microprestamos/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Kaggle
+.kaggle/
+kaggle.json
