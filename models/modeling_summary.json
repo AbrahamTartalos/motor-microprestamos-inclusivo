@@ -1,0 +1,53 @@
+{
+    "models": {
+        "baseline": {
+            "logistic_regression": {
+                "roc_auc": 0.6224665231526056,
+                "precision": 0.11358332036720087,
+                "recall": 0.5881168177240684,
+                "f1": 0.19039546180680078
+            },
+            "random_forest": {
+                "roc_auc": 0.6484432664364586,
+                "precision": 0.16577967003725386,
+                "recall": 0.12547834843907352,
+                "f1": 0.14284076579158547
+            }
+        },
+        "inclusive": {
+            "logistic_regression": {
+                "roc_auc": 0.6221220908309419,
+                "precision": 0.11328291642427768,
+                "recall": 0.5883182275931521,
+                "f1": 0.18998373983739839
+            },
+            "lightgbm": {
+                "roc_auc": 0.7324787075626524,
+                "precision": 0.380327868852459,
+                "recall": 0.02336354481369587,
+                "f1": 0.04402277039848197
+            }
+        }
+    },
+    "impact": {
+        "test_set": {
+            "additional_approvals": 3453,
+            "pct_increase": 5.979738505498312,
+            "baseline_default_rate": 7.5192657372932725,
+            "inclusive_default_rate": 7.923461551031079
+        },
+        "full_dataset": {
+            "additional_approvals": 17264,
+            "additional_revenue_usd": 1773119836
+        },
+        "argentina_market": {
+            "potential_new_clients": 293007
+        }
+    },
+    "best_model": "LightGBM Inclusive",
+    "features": {
+        "baseline_count": 227,
+        "inclusive_count": 234,
+        "alternative_count": 7
+    }
+}
