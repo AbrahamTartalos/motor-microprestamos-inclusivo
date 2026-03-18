@@ -1,0 +1,53 @@
+{
+  "phase": 4,
+  "phase_name": "SHAP Explainability",
+  "model": "LightGBM Tuned",
+  "roc_auc": 0.7440145328025243,
+  "shap_sample_size": 2000,
+  "alternative_features_ranking": [
+    {
+      "Feature": "EXT_SOURCE_COMBINED",
+      "Rank": 1,
+      "Mean_Abs_SHAP": 0.035280691336442745
+    },
+    {
+      "Feature": "ADDRESS_TENURE_SCORE",
+      "Rank": 4,
+      "Mean_Abs_SHAP": 0.020716749311056833
+    },
+    {
+      "Feature": "INCOME_STABILITY_SCORE_ADJ",
+      "Rank": 5,
+      "Mean_Abs_SHAP": 0.019684478172954743
+    },
+    {
+      "Feature": "FINANCIAL_INCLUSION_SCORE",
+      "Rank": 7,
+      "Mean_Abs_SHAP": 0.014537760477520636
+    },
+    {
+      "Feature": "CREDIT_BUREAU_SCORE",
+      "Rank": 10,
+      "Mean_Abs_SHAP": 0.011394097275923231
+    },
+    {
+      "Feature": "EMPLOYMENT_STABILITY",
+      "Rank": 61,
+      "Mean_Abs_SHAP": 0.0020812567253699612
+    },
+    {
+      "Feature": "PAYMENT_BURDEN_SCORE",
+      "Rank": 102,
+      "Mean_Abs_SHAP": 0.00041567990226235745
+    }
+  ],
+  "top_feature_overall": "EXT_SOURCE_COMBINED",
+  "alt_features_in_top10": 5,
+  "alt_features_in_top20": 5,
+  "key_findings": [
+    "EXT_SOURCE_COMBINED es el feature más predictivo del modelo",
+    "FINANCIAL_INCLUSION_SCORE valida que datos alternativos predicen responsabilidad",
+    "El modelo es auditable y explicable a nivel individual",
+    "5 de 7 features alternativos en Top 20 SHAP"
+  ]
+}
