@@ -15,12 +15,20 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if not os.path.exists(os.path.join(ROOT, "models")):
-    ROOT = os.path.dirname(ROOT)
+# Resolución robusta para local y Streamlit Cloud
+def find_root():
+    """Busca la raíz del proyecto subiendo directorios hasta encontrar models/."""
+    path = os.path.abspath(__file__)
+    for _ in range(5):  # máximo 5 niveles hacia arriba
+        path = os.path.dirname(path)
+        if os.path.exists(os.path.join(path, "models")):
+            return path
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+ROOT        = find_root()
 MODELS_PATH = os.path.join(ROOT, "models")
-SHAP_PATH   = os.path.join(ROOT, "app", "assets", "shap")
+DATA_PATH   = os.path.join(ROOT, "data", "processed")
+SHAP_PATH = os.path.join(ROOT, "app", "assets", "shap")
 
 # ── CSS ──────────────────────────────────────────────────────────────────────
 st.markdown("""
@@ -101,7 +109,7 @@ def show_image(filename, caption=None):
     path = img_path(filename)
     if os.path.exists(path):
         img = load_image(path)
-        st.image(img, caption=caption, width='stretch')
+        st.image(img, caption=caption, use_container_width=True)
     else:
         st.warning(f"Imagen no encontrada: {filename}")
 

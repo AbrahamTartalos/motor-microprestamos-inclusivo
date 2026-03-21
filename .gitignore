@@ -1,10 +1,20 @@
 # Datos (NO subir a GitHub)
+# Dataset completo — demasiado pesado para GitHub
+data/processed/train_processed_clean.csv
+data/processed/train_processed.csv
 data/raw/
-data/processed/*.csv
+# Dataset crudo nunca
+*.csv.gz
+
 *.zip
 
-# Modelos entrenados
-models/*.pkl
+# Modelos — excluir los pesados, incluir los necesarios
+# lgbm_tuned_v2.pkl y los JSON sí se deben subir
+models/lgbm_tuned.pkl
+models/lgbm_inclusive.pkl
+models/lr_baseline.pkl
+models/rf_baseline.pkl
+models/lr_inclusive.pkl
 models/*.joblib
 
 # Entorno Python
@@ -33,4 +43,4 @@ Thumbs.db
 
 # Kaggle
 .kaggle/
-kaggle.json
+kaggle.jsondata/processed/train_processed.csv
