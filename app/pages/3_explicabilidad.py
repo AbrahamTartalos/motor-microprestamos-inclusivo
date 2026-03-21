@@ -98,9 +98,6 @@ def load_shap_summary():
     with open(os.path.join(MODELS_PATH, "shap_summary.json"), "r") as f:
         return json.load(f)
 
-@st.cache_data(show_spinner=False)
-def load_image(path):
-    return Image.open(path)
 
 def img_path(filename):
     return os.path.join(SHAP_PATH, filename)
@@ -108,8 +105,7 @@ def img_path(filename):
 def show_image(filename, caption=None):
     path = img_path(filename)
     if os.path.exists(path):
-        img = load_image(path)
-        st.image(img, caption=caption, use_container_width=True)
+        st.image(path, caption=caption, use_container_width=True)
     else:
         st.warning(f"Imagen no encontrada: {filename}")
 
