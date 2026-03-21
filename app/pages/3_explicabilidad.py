@@ -30,6 +30,12 @@ MODELS_PATH = os.path.join(ROOT, "models")
 DATA_PATH   = os.path.join(ROOT, "data", "processed")
 SHAP_PATH = os.path.join(ROOT, "app", "assets", "shap")
 
+# DEBUG TEMPORAL — eliminar después
+st.write(f"ROOT: {ROOT}")
+st.write(f"SHAP_PATH: {SHAP_PATH}")
+st.write(f"Existe SHAP_PATH: {os.path.exists(SHAP_PATH)}")
+st.write(f"Archivos en SHAP_PATH: {os.listdir(SHAP_PATH) if os.path.exists(SHAP_PATH) else 'NO EXISTE'}")
+
 # ── CSS ──────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
