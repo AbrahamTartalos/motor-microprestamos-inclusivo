@@ -1,0 +1,19 @@
+Feature,Type,Description,Source
+AGE_YEARS,Numerical,Transformed from DAYS_ variable to years,Temporal transformation
+EMPLOYMENT_YEARS,Numerical,Transformed from DAYS_ variable to years,Temporal transformation
+ADDRESS_TENURE_YEARS,Numerical,Transformed from DAYS_ variable to years,Temporal transformation
+ID_PUBLISH_YEARS,Numerical,Transformed from DAYS_ variable to years,Temporal transformation
+PHONE_CHANGE_YEARS,Numerical,Transformed from DAYS_ variable to years,Temporal transformation
+CREDIT_INCOME_RATIO,Numerical,Total credit / Total income,Traditional feature
+ANNUITY_INCOME_RATIO,Numerical,Loan annuity / Total income,Traditional feature
+CREDIT_GOODS_RATIO,Numerical,Credit amount / Goods price,Traditional feature
+EMPLOYMENT_AGE_RATIO,Numerical,Employment years / Age,Traditional feature
+INCOME_PER_CAPITA,Numerical,Total income / Family members,Traditional feature
+CHILDREN_RATIO,Numerical,Number of children / Family members,Traditional feature
+INCOME_STABILITY_SCORE_ADJ,Numerical (0-1),Income stability score based on employment type and tenure (0-1),Alternative feature (INNOVATION)
+EMPLOYMENT_STABILITY,Numerical (0-1),Employment stability normalized by years (0-1),Alternative feature (INNOVATION)
+ADDRESS_TENURE_SCORE,Numerical (0-1),Residential stability score (0-1),Alternative feature (INNOVATION)
+FINANCIAL_INCLUSION_SCORE,Numerical (0-1),Digital/financial inclusion based on documents and contact flags (0-1),Alternative feature (INNOVATION)
+EXT_SOURCE_COMBINED,Numerical (0-1),Weighted average of external credit scores (0-1),Alternative feature (INNOVATION)
+CREDIT_BUREAU_SCORE,Numerical (0-1),Inverse credit bureau activity (less queries = better) (0-1),Alternative feature (INNOVATION)
+PAYMENT_BURDEN_SCORE,Numerical (0-1),"Payment burden score (0=high burden, 1=low burden)",Alternative feature (INNOVATION)
