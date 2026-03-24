@@ -772,20 +772,6 @@ def validate_user_input(age, income, loan_amount):
 
 ---
 
-### 12. PRÓXIMOS PASOS TÉCNICOS
-
-1. ✅ Completar esta documentación
-2. ✅ Setup inicial: Crear estructura de carpetas
-3. ✅ Descargar dataset Home Credit
-4. ✅ Iniciar Notebook 01_EDA.ipynb
-5. ⏭️ Crear functions en src/data/
-6. ⏭️ Desarrollar pipeline completo
-7. ⏭️ Entrenar y evaluar modelos
-8. ⏭️ Crear dashboard
-9. ⏭️ Deploy a Streamlit Cloud
-10. ⏭️ Documentar resultados finales
-
----
 
 **Versión:** 1.0  
 **Autor:** Abraham Tartalos  

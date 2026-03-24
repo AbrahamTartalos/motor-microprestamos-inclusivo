@@ -591,22 +591,6 @@ Si este modelo se implementara con datos argentinos, se incorporarían:
 
 ---
 
-### 12. CHECKLIST DE DATOS
-
-Antes de pasar a modelado, verificar:
-
-- [ ] Dataset descargado y extraído
-- [ ] Calidad de datos verificada (sin errores graves)
-- [ ] Missing values manejados
-- [ ] Features tradicionales creados
-- [ ] Features alternativos creados (al menos 10)
-- [ ] Encoding aplicado
-- [ ] Train/test split realizado (80/20, estratificado)
-- [ ] Data dictionary documentado
-- [ ] Dataset procesado guardado
-- [ ] Visualizaciones clave creadas
-
----
 
 **Versión:** 1.0  
 **Autor:** Abraham Tartalos  
